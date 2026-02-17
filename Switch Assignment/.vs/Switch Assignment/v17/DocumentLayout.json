@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\eagne\\Desktop\\CPPProjects\\SwitchAssignment\\Switch Assignment\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B070CBB-8727-4788-8541-034F3491E905}|Switch Assignment\\Switch Assignment.vcxproj|C:\\Users\\eagne\\Desktop\\CPPProjects\\SwitchAssignment\\Switch Assignment\\Switch Assignment\\Switch Assignment.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8B070CBB-8727-4788-8541-034F3491E905}|Switch Assignment\\Switch Assignment.vcxproj|solutionrelative:Switch Assignment\\Switch Assignment.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Switch Assignment.cpp",
+              "DocumentMoniker": "C:\\Users\\eagne\\Desktop\\CPPProjects\\SwitchAssignment\\Switch Assignment\\Switch Assignment\\Switch Assignment.cpp",
+              "RelativeDocumentMoniker": "Switch Assignment\\Switch Assignment.cpp",
+              "ToolTip": "C:\\Users\\eagne\\Desktop\\CPPProjects\\SwitchAssignment\\Switch Assignment\\Switch Assignment\\Switch Assignment.cpp",
+              "RelativeToolTip": "Switch Assignment\\Switch Assignment.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-02-17T03:35:10.901Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
