@@ -3,12 +3,12 @@
 
 #include <iostream>
 
-int potionEffect(int PotionType,enum Player&) {
-    Player applyPotion(enum PotionType, Player player);
-    enum PotionType = HEALTH, SPEED, STRENGTH, MAGIC;
-    switch (PotionType, Player) {
+int potionEffect(enum PotionType, Player) {
+    Player player();
+    int potionChoice = PotionType;
+    switch (potionChoice) {
     case 0:
-        health = 100;
+        player.health = 100;
         speed = 10;
         strength = 15;
         magic = 30;
@@ -31,14 +31,17 @@ int potionEffect(int PotionType,enum Player&) {
         strength = 10;
         magic = 100;
         break;
-
-    
     };
+    return 0;
 }
 
 
 int main()
 {
+    int health;
+    int speed;
+    int strength;
+    int magic;
     enum PotionType {HealthPotion = 0, SpeedPotion = 1, StrengthPotion = 2, MagicPotion = 3};
     struct Player{
         int health = 30;
