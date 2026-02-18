@@ -3,50 +3,71 @@
 
 #include <iostream>
 
-int potionEffect(enum PotionType, Player) {
-    Player player();
-    int potionChoice = PotionType;
-    switch (potionChoice) {
-    case 0:
-        player.health = 100;
-        speed = 10;
-        strength = 15;
-        magic = 30;
-        break;
-    case 1:
-        health = 20;
-        speed = 50;
-        strength = 5;
-        magic = 10;
-        break;
-    case 2:
-        health = 60;
-        speed = 25;
-        strength = 200;
-        magic = 30;
-        break;
-    case 3:
-        health = 30;
-        speed = 10;
-        strength = 10;
-        magic = 100;
-        break;
-    };
-    return 0;
-}
-
-
-int main()
-{
-    int health;
-    int speed;
-    int strength;
-    int magic;
-    enum PotionType {HealthPotion = 0, SpeedPotion = 1, StrengthPotion = 2, MagicPotion = 3};
+    enum PotionType {HealthPotion,
+        SpeedPotion, 
+        StrengthPotion, 
+        MagicPotion};
     struct Player{
         int health = 30;
         int speed = 10;
         int strength = 15;
-        int magic = 30;
-    } player;
+        int magic = 30;    
+    } ;
+
+
+
+Player potionEffect(PotionType potion, Player player) {
+
+    switch (potion) {
+    case 0:
+        player.health = 100;
+        player.speed = 10;
+        player.strength = 15;
+        player.magic = 30;
+        break;
+    case 1:
+        player.health = 20;
+        player.speed = 50;
+        player.strength = 5;
+        player.magic = 10;
+        break;
+    case 2:
+        player.health = 60;
+        player.speed = 25;
+        player.strength = 200;
+        player.magic = 30;
+        break;
+    case 3:
+        player.health = 30;
+        player.speed = 10;
+        player.strength = 10;
+        player.magic = 100;
+        break;
+    };
+    return player;
+}
+
+
+int displayStats(Player player) {
+    std::cout << "Player Health: " << player.health << "\n";
+    std::cout << "Player Speed: " << player.speed << "\n";
+    std::cout << "Player Stregth: " << player.strength << "\n";
+    std::cout << "Player Magic: " << player.magic << "\n\n";
+    return 0;
+}
+
+int assertion(PotionType potion, Player player) {
+    assert(player.health == potionEffect(potion));
+
+}
+
+int main()
+{
+    Player player;
+
+    displayStats(player);
+
+    player = potionEffect(SpeedPotion, player);
+
+    displayStats(player);
 }
