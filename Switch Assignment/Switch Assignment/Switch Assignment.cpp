@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <cassert>
 
     enum PotionType {HealthPotion,
         SpeedPotion, 
@@ -17,7 +18,7 @@
 
 
 Player potionEffect(PotionType potion, Player player) {
-
+    potion = SpeedPotion;
     switch (potion) {
     case 0:
         player.health = 100;
@@ -56,18 +57,23 @@ int displayStats(Player player) {
     return 0;
 }
 
-int assertion(PotionType potion, Player player) {
-    assert(player.health == potionEffect(potion));
-
+void assertStats(PotionType potion, Player player, Player expected) {
+    Player updatedPlayer = potionEffect(potion, player);
+    assert(updatedPlayer.health == expected.health);
+    assert(updatedPlayer.speed == expected.speed);
+    assert(updatedPlayer.strength == expected.strength);
+    assert(updatedPlayer.magic == expected.magic);
 }
 
 int main()
 {
-    Player player;
+
+
+    const Player player;
 
     displayStats(player);
 
-    player = potionEffect(SpeedPotion, player);
+    assertStats(PotionType potion, Player player, Player expected);
 
     displayStats(player);
 }

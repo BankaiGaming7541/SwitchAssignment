@@ -1,2 +1,8 @@
 ﻿  Switch Assignment.cpp
-  Switch Assignment.vcxproj -> C:\Users\s260023\Desktop\CPPProject\SwitchAssignment\Switch Assignment\x64\Debug\Switch Assignment.exe
+C:\Users\s260023\Desktop\CPPProject\SwitchAssignment\Switch Assignment\Switch Assignment\Switch Assignment.cpp(72,18): error C2082: redefinition of formal parameter 'player'
+C:\Users\s260023\Desktop\CPPProject\SwitchAssignment\Switch Assignment\Switch Assignment\Switch Assignment.cpp(76,5): error C2660: 'assertStats': function does not take 0 arguments
+      C:\Users\s260023\Desktop\CPPProject\SwitchAssignment\Switch Assignment\Switch Assignment\Switch Assignment.cpp(60,6):
+      see declaration of 'assertStats'
+      C:\Users\s260023\Desktop\CPPProject\SwitchAssignment\Switch Assignment\Switch Assignment\Switch Assignment.cpp(76,5):
+      while trying to match the argument list '()'
+  
